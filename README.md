@@ -16,7 +16,7 @@
 * Адмін-панель для створення постів.
 
 ## Як запустити проект локально:
-1. Клонувати репозиторій: `git clone <посилання_на_ваш_репо>`
+1. Клонувати репозиторій: `git clone https://github.com/ksenzhenkita/django-blog-lab.git`
 2. Встановити Django: `pip install django`
 3. Зробити міграції бази даних: `python manage.py migrate`
 4. Запустити сервер: `python manage.py runserver`
