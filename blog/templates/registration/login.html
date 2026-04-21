@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вхід на сайт</title>
+</head>
+<body>
+    <a href="{% url 'post_list' %}">⬅ На головну</a>
+    <h2>Вхід у Блог</h2>
+
+    <form method="post">
+        {% csrf_token %}  {{ form.as_p }}
+        <button type="submit">Увійти</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Реєстрація</title>
+</head>
+<body>
+    <a href="{% url 'post_list' %}">⬅ На головну</a>
+    <h2>Реєстрація нового користувача</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Зареєструватися</button>
+    </form>
+</body>
+</html>

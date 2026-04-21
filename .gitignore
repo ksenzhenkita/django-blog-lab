@@ -1,0 +1,13 @@
+# База даних
+db.sqlite3
+
+# Файли PyCharm
+.idea/
+
+# Віртуальне середовище (якщо є)
+venv/
+env/
+
+# Кеш Python
+*.pyc
+__pycache__/
