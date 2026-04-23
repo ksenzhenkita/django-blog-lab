@@ -9,7 +9,7 @@ from unittest.mock import patch
 class ModelTests(TestCase):
     def setUp(self):
         # Ця функція запускається ПЕРЕД кожним тестом. Створюємо фейкового юзера і пост.
-        self.user = User.objects.create_user(username='testuser', password='password123') 
+        self.user = User.objects.create_user(username='testuser', password='password123') # nosec
         self.post = Post.objects.create(title='Тестовий пост', content='Текст', author=self.user)
 
     def test_post_model_str(self):
