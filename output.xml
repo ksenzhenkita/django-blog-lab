@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-25T13:44:58.192516" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-25T14:07:13.320021" rpa="false" schemaversion="5">
 <suite id="s1" name="Blog" source="C:\lab_blog\robot_tests\blog.robot">
 <test id="s1-t1" name="User Can Log In And Leave Comment" line="15">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:44:58.538436" level="INFO">Opening browser 'Chrome' to base url 'http://127.0.0.1:8000/accounts/login/'.</msg>
+<msg time="2026-04-25T14:07:13.637197" level="INFO">Opening browser 'Chrome' to base url 'http://127.0.0.1:8000/accounts/login/'.</msg>
 <arg>${LOGIN_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-04-25T13:44:58.538062" elapsed="1.039665"/>
+<status status="PASS" start="2026-04-25T14:07:13.636807" elapsed="0.969345"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2026-04-25T13:44:59.582738" elapsed="0.077768"/>
+<status status="PASS" start="2026-04-25T14:07:14.611270" elapsed="0.071181"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:44:59.661453" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<msg time="2026-04-25T14:07:14.684365" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
 <arg>name=username</arg>
 <arg>${USERNAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T13:44:59.660913" elapsed="0.106585"/>
+<status status="PASS" start="2026-04-25T14:07:14.683822" elapsed="0.143193"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:44:59.776558" level="INFO">Typing text 'Admin4life!' into text field 'name=password'.</msg>
+<msg time="2026-04-25T14:07:14.828245" level="INFO">Typing text 'Admin4life!' into text field 'name=password'.</msg>
 <arg>name=password</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T13:44:59.776230" elapsed="0.101181"/>
+<status status="PASS" start="2026-04-25T14:07:14.827935" elapsed="0.131642"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:44:59.878105" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<msg time="2026-04-25T14:07:14.960194" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
 <arg>${BTN_SUBMIT}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T13:44:59.877820" elapsed="1.511351"/>
+<status status="PASS" start="2026-04-25T14:07:14.959894" elapsed="1.509837"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:45:01.389819" level="INFO">Opening url 'http://127.0.0.1:8000'</msg>
+<msg time="2026-04-25T14:07:16.470459" level="INFO">Opening url 'http://127.0.0.1:8000'</msg>
 <arg>${SERVER}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.389611" elapsed="0.045620"/>
+<status status="PASS" start="2026-04-25T14:07:16.470225" elapsed="0.044084"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:45:01.435919" level="INFO">Clicking link 'xpath=//a[contains(@class, 'text-dark')]'.</msg>
+<msg time="2026-04-25T14:07:16.516339" level="INFO">Clicking link 'xpath=//a[contains(@class, 'text-dark')]'.</msg>
 <arg>xpath=//a[contains(@class, 'text-dark')]</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.435650" elapsed="0.134898"/>
+<status status="PASS" start="2026-04-25T14:07:16.515999" elapsed="0.145072"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>id=id_text</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.570896" elapsed="0.028076"/>
+<status status="PASS" start="2026-04-25T14:07:16.661369" elapsed="0.027350"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:45:01.599709" level="INFO">Typing text 'Тестовий коментар від Robot Framework!' into text field 'id=id_text'.</msg>
+<msg time="2026-04-25T14:07:16.689255" level="INFO">Typing text 'Тестовий коментар від Robot Framework!' into text field 'id=id_text'.</msg>
 <arg>id=id_text</arg>
 <arg>Тестовий коментар від Robot Framework!</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.599431" elapsed="0.096259"/>
+<status status="PASS" start="2026-04-25T14:07:16.689028" elapsed="0.105566"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2026-04-25T13:45:01.697601" level="INFO">Executing JavaScript:
+<msg time="2026-04-25T14:07:16.795411" level="INFO">Executing JavaScript:
 document.querySelector('.btn-success').click()
 Without any arguments.</msg>
 <arg>document.querySelector('.btn-success').click()</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.696087" elapsed="0.042712"/>
+<status status="PASS" start="2026-04-25T14:07:16.795001" elapsed="0.005211"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Тестовий коментар від Robot Framework!</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.739594" elapsed="0.037220"/>
+<status status="PASS" start="2026-04-25T14:07:16.802191" elapsed="0.074126"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-04-25T13:45:01.777272" elapsed="2.234825"/>
+<status status="PASS" start="2026-04-25T14:07:16.877014" elapsed="2.426417"/>
 </kw>
 <doc>Перевірка, що користувач може залогінитись і залишити коментар</doc>
-<status status="PASS" start="2026-04-25T13:44:58.536782" elapsed="5.476040"/>
+<status status="PASS" start="2026-04-25T14:07:13.634540" elapsed="5.669569"/>
 </test>
 <doc>Тестування додавання коментаря у блозі</doc>
-<status status="PASS" start="2026-04-25T13:44:58.194390" elapsed="5.822756"/>
+<status status="PASS" start="2026-04-25T14:07:13.322773" elapsed="5.983880"/>
 </suite>
 <statistics>
 <total>

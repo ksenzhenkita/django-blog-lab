@@ -6,8 +6,8 @@ Library           SeleniumLibrary
 ${SERVER}         http://127.0.0.1:8000
 ${BROWSER}        Chrome
 ${LOGIN_URL}      ${SERVER}/accounts/login/
-${USERNAME}       admin
-${PASSWORD}       Admin4life!
+${USERNAME}       x
+${PASSWORD}       x
 # Змінні-локатори
 ${BTN_SUBMIT}     xpath=//button[@type="submit"]
 
