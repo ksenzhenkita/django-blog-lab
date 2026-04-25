@@ -74,7 +74,7 @@ class BlogUITests(unittest.TestCase):
         self.driver.save_screenshot("step1_login_page.png")  # Робимо скріншот!
 
         # Крок 2: Логінимось
-        login_page.login("admin", "Admin4life!")
+        login_page.login("xx", "xx")
         time.sleep(1)  # Трохи чекаємо для красивого скріншота
         self.driver.save_screenshot("step2_after_login.png")
 
