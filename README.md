@@ -4,7 +4,7 @@
 
 ## Використані технології:
 * **Мова:** Python
-* **Фреймворк:** Django
+* **Фреймворк:** Django та інші (дивись у requirements.txt)
 * **База даних:** SQLite (вбудована)
 * **Дизайн:** HTML/CSS + Bootstrap 5
 
@@ -17,7 +17,7 @@
 
 ## Як запустити проект локально:
 1. Клонувати репозиторій: `git clone https://github.com/ksenzhenkita/django-blog-lab.git`
-2. Встановити Django: `pip install django`
+2. Встановити Django: `pip install django` + дивися інші вимоги у requirements.txt
 3. Зробити міграції бази даних: `python manage.py migrate`
 4. Запустити сервер: `python manage.py runserver`
 5. Відкрити в браузері: `http://127.0.0.1:8000/`
