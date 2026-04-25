@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.0 on win32)" generated="2026-04-25T13:44:58.192516" rpa="false" schemaversion="5">
+<suite id="s1" name="Blog" source="C:\lab_blog\robot_tests\blog.robot">
+<test id="s1-t1" name="User Can Log In And Leave Comment" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:44:58.538436" level="INFO">Opening browser 'Chrome' to base url 'http://127.0.0.1:8000/accounts/login/'.</msg>
+<arg>${LOGIN_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T13:44:58.538062" elapsed="1.039665"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T13:44:59.582738" elapsed="0.077768"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:44:59.661453" level="INFO">Typing text 'admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T13:44:59.660913" elapsed="0.106585"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:44:59.776558" level="INFO">Typing text 'Admin4life!' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T13:44:59.776230" elapsed="0.101181"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:44:59.878105" level="INFO">Clicking button 'xpath=//button[@type="submit"]'.</msg>
+<arg>${BTN_SUBMIT}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T13:44:59.877820" elapsed="1.511351"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:45:01.389819" level="INFO">Opening url 'http://127.0.0.1:8000'</msg>
+<arg>${SERVER}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.389611" elapsed="0.045620"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:45:01.435919" level="INFO">Clicking link 'xpath=//a[contains(@class, 'text-dark')]'.</msg>
+<arg>xpath=//a[contains(@class, 'text-dark')]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.435650" elapsed="0.134898"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>id=id_text</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.570896" elapsed="0.028076"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:45:01.599709" level="INFO">Typing text 'Тестовий коментар від Robot Framework!' into text field 'id=id_text'.</msg>
+<arg>id=id_text</arg>
+<arg>Тестовий коментар від Robot Framework!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.599431" elapsed="0.096259"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-04-25T13:45:01.697601" level="INFO">Executing JavaScript:
+document.querySelector('.btn-success').click()
+Without any arguments.</msg>
+<arg>document.querySelector('.btn-success').click()</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.696087" elapsed="0.042712"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Тестовий коментар від Robot Framework!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.739594" elapsed="0.037220"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-04-25T13:45:01.777272" elapsed="2.234825"/>
+</kw>
+<doc>Перевірка, що користувач може залогінитись і залишити коментар</doc>
+<status status="PASS" start="2026-04-25T13:44:58.536782" elapsed="5.476040"/>
+</test>
+<doc>Тестування додавання коментаря у блозі</doc>
+<status status="PASS" start="2026-04-25T13:44:58.194390" elapsed="5.822756"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Blog" id="s1" pass="1" fail="0" skip="0">Blog</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
