@@ -4,6 +4,7 @@ from .models import Post
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.http import JsonResponse
 
 def post_list(request):
     posts = Post.objects.all().order_by('-created_at')
@@ -37,3 +38,8 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/register.html', {'form': form})
+
+def api_posts(request):
+    # Дістаємо всі пости, але беремо тільки їхні ID, заголовки та текст
+    posts = list(Post.objects.values('id', 'title', 'content'))
+    return JsonResponse({'posts': posts})
